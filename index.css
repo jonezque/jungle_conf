@@ -6,3 +6,49 @@ html, body {
 * {
   box-sizing: content-box;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.custom-button {
+  border: none;
+  border-radius: 5px;
+  background: hotpink;
+  color: yellowgreen;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  animation-name: colorbutton;
+  animation-duration: 200ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.custom-button:hover {
+  transition: all 200ms;
+  background: magenta;
+  transform: translateY(-px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+@keyframes colorbutton {
+  from {
+    color: yellowgreen;
+  }
+  to {
+    color: yellow;
+  }
+}
+
+#canvas2d {
+  border: 1px solid black;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 360px;
+  height: 360px;
+}
