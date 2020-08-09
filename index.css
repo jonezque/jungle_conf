@@ -45,10 +45,10 @@ html, body {
 }
 
 #canvas2d {
-  border: 1px solid black;
   position: fixed;
-  top: 10px;
-  left: 10px;
-  width: 360px;
-  height: 360px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
